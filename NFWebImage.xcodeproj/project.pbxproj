@@ -13,6 +13,8 @@
 		771FA6C52052A75700B9F30C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 771FA6C42052A75700B9F30C /* Assets.xcassets */; };
 		771FA6C82052A75700B9F30C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 771FA6C62052A75700B9F30C /* LaunchScreen.storyboard */; };
 		771FA6CB2052A75700B9F30C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 771FA6CA2052A75700B9F30C /* main.m */; };
+		771FA6D72052A77F00B9F30C /* NFFileCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 771FA6D32052A77E00B9F30C /* NFFileCache.m */; };
+		771FA6D82052A77F00B9F30C /* NFMemoryCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 771FA6D52052A77E00B9F30C /* NFMemoryCache.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		771FA6C72052A75700B9F30C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		771FA6C92052A75700B9F30C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		771FA6CA2052A75700B9F30C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		771FA6D22052A77E00B9F30C /* NFFileCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NFFileCache.h; sourceTree = "<group>"; };
+		771FA6D32052A77E00B9F30C /* NFFileCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NFFileCache.m; sourceTree = "<group>"; };
+		771FA6D52052A77E00B9F30C /* NFMemoryCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NFMemoryCache.m; sourceTree = "<group>"; };
+		771FA6D62052A77E00B9F30C /* NFMemoryCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NFMemoryCache.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,8 @@
 		771FA6BA2052A75600B9F30C /* NFWebImage */ = {
 			isa = PBXGroup;
 			children = (
+				771FA6D12052A77E00B9F30C /* NFFileCache */,
+				771FA6D42052A77E00B9F30C /* NFMemoryCache */,
 				771FA6BB2052A75600B9F30C /* AppDelegate.h */,
 				771FA6BC2052A75600B9F30C /* AppDelegate.m */,
 				771FA6BE2052A75700B9F30C /* ViewController.h */,
@@ -69,6 +77,24 @@
 				771FA6CA2052A75700B9F30C /* main.m */,
 			);
 			path = NFWebImage;
+			sourceTree = "<group>";
+		};
+		771FA6D12052A77E00B9F30C /* NFFileCache */ = {
+			isa = PBXGroup;
+			children = (
+				771FA6D22052A77E00B9F30C /* NFFileCache.h */,
+				771FA6D32052A77E00B9F30C /* NFFileCache.m */,
+			);
+			path = NFFileCache;
+			sourceTree = "<group>";
+		};
+		771FA6D42052A77E00B9F30C /* NFMemoryCache */ = {
+			isa = PBXGroup;
+			children = (
+				771FA6D52052A77E00B9F30C /* NFMemoryCache.m */,
+				771FA6D62052A77E00B9F30C /* NFMemoryCache.h */,
+			);
+			path = NFMemoryCache;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,6 +168,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				771FA6D72052A77F00B9F30C /* NFFileCache.m in Sources */,
+				771FA6D82052A77F00B9F30C /* NFMemoryCache.m in Sources */,
 				771FA6C02052A75700B9F30C /* ViewController.m in Sources */,
 				771FA6CB2052A75700B9F30C /* main.m in Sources */,
 				771FA6BD2052A75600B9F30C /* AppDelegate.m in Sources */,
