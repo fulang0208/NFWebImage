@@ -70,7 +70,6 @@ static NSString *_NFNSStringMD5(NSString *string) {
 
 @implementation NFFileCache {
     NSFileManager *_fileManager;
-//    dispatch_semaphore_t _lock;
     dispatch_queue_t _queue;
     NSString *_catalogPath;
     _NFFileCacheCataLog *_catalog;
@@ -94,7 +93,6 @@ static NSString *_NFNSStringMD5(NSString *string) {
     }
     
     _name = name;
-//    _lock = dispatch_semaphore_create(1);
     _queue = dispatch_queue_create("com.nf.cache.file", DISPATCH_QUEUE_CONCURRENT);
     _catalogPath = [_directoryPath stringByAppendingPathComponent:CatalogFileName];
     
@@ -176,6 +174,7 @@ static NSString *_NFNSStringMD5(NSString *string) {
     if (data) {
         NSString *filePath = [self _filePathForKey:key];
         [data writeToFile:filePath atomically:YES];
+        [_catalog.keys addObject:key];
     }
 }
 
